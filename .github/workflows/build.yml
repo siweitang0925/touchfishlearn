@@ -88,6 +88,9 @@ jobs:
         export LANG=en_US.UTF-8
         export LC_ALL=en_US.UTF-8
         
+        echo "Installing create-dmg for DMG packaging..."
+        brew install create-dmg
+        
         echo "Building macOS executable..."
         if [ -f "build_utf8.spec" ]; then
           python -m PyInstaller build_utf8.spec
@@ -97,6 +100,39 @@ jobs:
           echo "spec files not found, using default spec..."
           python -m PyInstaller --onefile --windowed --name "English-Learning-Assistant" --hidden-import=tkinter --hidden-import=tkinter.ttk main.py
         fi
+        
+        echo "Creating DMG package..."
+        DMG_NAME="English-Learning-Assistant-macOS.dmg"
+        APP_NAME="English-Learning-Assistant.app"
+        
+        # Create temporary directory for DMG
+        TEMP_DIR=$(mktemp -d)
+        MOUNT_DIR="$TEMP_DIR/mount"
+        
+        # Create Applications symlink
+        mkdir -p "$MOUNT_DIR"
+        ln -s /Applications "$MOUNT_DIR/Applications"
+        
+        # Copy application
+        cp -R "dist/English-Learning-Assistant" "$MOUNT_DIR/$APP_NAME"
+        
+        # Create DMG
+        create-dmg \
+            --volname "English Learning Assistant" \
+            --window-pos 200 120 \
+            --window-size 600 400 \
+            --icon-size 100 \
+            --icon "$APP_NAME" 175 120 \
+            --hide-extension "$APP_NAME" \
+            --app-drop-link 425 120 \
+            --no-internet-enable \
+            "dist/$DMG_NAME" \
+            "$MOUNT_DIR/"
+        
+        # Clean up temporary files
+        rm -rf "$TEMP_DIR"
+        
+        echo "DMG package created: dist/$DMG_NAME"
     
     - name: Build executable (Linux)
       if: runner.os == 'Linux'
