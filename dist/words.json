@@ -1,9 +1,269 @@
 [
   {
-    "word": "1",
-    "meaning": "erwe",
-    "example": "ss",
-    "created_time": "2025-07-22T18:59:27.389734",
+    "word": "academic",
+    "meaning": "学术的",
+    "example": "Academic writing requires formal language.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "accomplish",
+    "meaning": "完成",
+    "example": "She accomplished all her goals for the year.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "accurate",
+    "meaning": "准确的",
+    "example": "The weather forecast was very accurate.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "achieve",
+    "meaning": "达到",
+    "example": "He achieved great success in his career.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "adequate",
+    "meaning": "充足的",
+    "example": "The room provided adequate space for the meeting.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": "2025-07-23T11:00:15.215921",
+    "proficiency": 1,
+    "last_correct_date": "2025-07-23",
+    "last_practice_date": "2025-07-23"
+  },
+  {
+    "word": "adjust",
+    "meaning": "调整",
+    "example": "You need to adjust your attitude.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": "2025-07-22T18:06:22.831687",
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": "2025-07-22"
+  },
+  {
+    "word": "administration",
+    "meaning": "管理",
+    "example": "The administration of the company is efficient.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "adult",
+    "meaning": "成年人",
+    "example": "Children need adult supervision.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "advance",
+    "meaning": "前进",
+    "example": "Technology continues to advance rapidly.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "advantage",
+    "meaning": "优势",
+    "example": "Being bilingual gives you an advantage in the job market.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": "2025-07-22T18:07:23.375213",
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": "2025-07-22"
+  },
+  {
+    "word": "advertise",
+    "meaning": "做广告",
+    "example": "Companies advertise their products on television.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "affect",
+    "meaning": "影响",
+    "example": "The weather affects my mood.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": "2025-07-22T18:10:21.498770",
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": "2025-07-22"
+  },
+  {
+    "word": "afford",
+    "meaning": "负担得起",
+    "example": "I cannot afford to buy a new car.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "agency",
+    "meaning": "机构",
+    "example": "The travel agency helped us plan our trip.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "agreement",
+    "meaning": "协议",
+    "example": "We reached an agreement on the terms.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "agriculture",
+    "meaning": "农业",
+    "example": "Agriculture is important for the economy.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": "2025-07-22T18:09:22.275765",
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": "2025-07-22"
+  },
+  {
+    "word": "aid",
+    "meaning": "援助",
+    "example": "The government provided aid to the victims.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": "2025-07-22T18:05:20.762901",
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": "2025-07-22"
+  },
+  {
+    "word": "aim",
+    "meaning": "目标",
+    "example": "Our aim is to improve customer satisfaction.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "air",
+    "meaning": "空气",
+    "example": "Fresh air is good for your health.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "aircraft",
+    "meaning": "飞机",
+    "example": "The aircraft landed safely.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "airline",
+    "meaning": "航空公司",
+    "example": "The airline offers good service.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "apple",
+    "meaning": "苹果",
+    "example": "I eat an apple every day.",
+    "created_time": "2025-07-23T10:37:45.840947",
+    "last_review": "2025-07-23T10:56:08.374665",
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": "2025-07-23"
+  },
+  {
+    "word": "beautiful",
+    "meaning": "美丽的",
+    "example": "She is a beautiful girl.",
+    "created_time": "2025-07-23T10:37:45.842942",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "computer",
+    "meaning": "电脑",
+    "example": "I work on my computer.",
+    "created_time": "2025-07-23T10:37:45.846933",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "delicious",
+    "meaning": "美味的",
+    "example": "This food is delicious.",
+    "created_time": "2025-07-23T10:37:45.850922",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "education",
+    "meaning": "教育",
+    "example": "Education is important.",
+    "created_time": "2025-07-23T10:37:45.852916",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "freedom",
+    "meaning": "自由",
+    "example": "Freedom is precious.",
+    "created_time": "2025-07-23T10:37:45.853913",
     "last_review": null,
     "proficiency": 0,
     "last_correct_date": null,

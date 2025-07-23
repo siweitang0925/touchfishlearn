@@ -268,5 +268,105 @@
     "proficiency": 0,
     "last_correct_date": null,
     "last_practice_date": null
+  },
+  {
+    "word": "book",
+    "meaning": "书",
+    "example": "I love reading books.",
+    "created_time": "2025-07-23T14:04:21.570538",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "dog",
+    "meaning": "狗",
+    "example": "The dog is very friendly.",
+    "created_time": "2025-07-23T14:04:21.575035",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "elephant",
+    "meaning": "大象",
+    "example": "The elephant is huge.",
+    "created_time": "2025-07-23T14:04:21.577030",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "flower",
+    "meaning": "花",
+    "example": "The flower is beautiful.",
+    "created_time": "2025-07-23T14:04:21.579024",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "garden",
+    "meaning": "花园",
+    "example": "The garden is full of flowers.",
+    "created_time": "2025-07-23T14:09:46.276314",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "house",
+    "meaning": "房子",
+    "example": "I live in a big house.",
+    "created_time": "2025-07-23T14:09:46.278309",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "internet",
+    "meaning": "互联网",
+    "example": "I use the internet every day.",
+    "created_time": "2025-07-23T14:09:46.280303",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "jacket",
+    "meaning": "夹克",
+    "example": "I wear a jacket in winter.",
+    "created_time": "2025-07-23T14:09:46.282298",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "kitchen",
+    "meaning": "厨房",
+    "example": "I cook in the kitchen.",
+    "created_time": "2025-07-23T14:09:46.286288",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
+  },
+  {
+    "word": "library",
+    "meaning": "图书馆",
+    "example": "I study in the library.",
+    "created_time": "2025-07-23T14:09:46.289026",
+    "last_review": null,
+    "proficiency": 0,
+    "last_correct_date": null,
+    "last_practice_date": null
   }
 ]

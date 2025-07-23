@@ -15,6 +15,13 @@ jobs:
         os: [windows-latest, macos-latest, ubuntu-latest]
         python-version: [3.11]
 
+    # 设置环境变量解决中文乱码问题
+    env:
+      PYTHONIOENCODING: utf-8
+      PYTHONUTF8: 1
+      LANG: en_US.UTF-8
+      LC_ALL: en_US.UTF-8
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -55,8 +62,16 @@ jobs:
         Write-Host "Files in current directory:"
         Get-ChildItem
         
+        Write-Host "Setting encoding for Windows..."
+        $env:PYTHONIOENCODING = "utf-8"
+        $env:PYTHONUTF8 = "1"
+        
         Write-Host "Building Windows executable..."
-        python -m PyInstaller --onefile --windowed --name "英语学习助手" main.py
+        if [ -f "build_utf8.spec" ]; then
+          python -m PyInstaller build_utf8.spec
+        else
+          python -m PyInstaller --onefile --windowed --name "英语学习助手" --hidden-import=tkinter --hidden-import=tkinter.ttk main.py
+        fi
     
     - name: Build executable (macOS)
       if: runner.os == 'macOS'
@@ -67,12 +82,20 @@ jobs:
         echo "Files in current directory:"
         ls -la
         
+        echo "Setting encoding for macOS..."
+        export PYTHONIOENCODING=utf-8
+        export PYTHONUTF8=1
+        export LANG=en_US.UTF-8
+        export LC_ALL=en_US.UTF-8
+        
         echo "Building macOS executable..."
-        if [ -f "build_mac.spec" ]; then
+        if [ -f "build_utf8.spec" ]; then
+          python -m PyInstaller build_utf8.spec
+        elif [ -f "build_mac.spec" ]; then
           python -m PyInstaller build_mac.spec
         else
-          echo "build_mac.spec not found, using default spec..."
-          python -m PyInstaller --onefile --windowed --name "英语学习助手" main.py
+          echo "spec files not found, using default spec..."
+          python -m PyInstaller --onefile --windowed --name "英语学习助手" --hidden-import=tkinter --hidden-import=tkinter.ttk main.py
         fi
     
     - name: Build executable (Linux)
@@ -84,8 +107,18 @@ jobs:
         echo "Files in current directory:"
         ls -la
         
+        echo "Setting encoding for Linux..."
+        export PYTHONIOENCODING=utf-8
+        export PYTHONUTF8=1
+        export LANG=en_US.UTF-8
+        export LC_ALL=en_US.UTF-8
+        
         echo "Building Linux executable..."
-        python -m PyInstaller --onefile --name "英语学习助手" main.py
+        if [ -f "build_utf8.spec" ]; then
+          python -m PyInstaller build_utf8.spec
+        else
+          python -m PyInstaller --onefile --name "英语学习助手" --hidden-import=tkinter --hidden-import=tkinter.ttk main.py
+        fi
     
     - name: List build artifacts (Windows)
       if: runner.os == 'Windows'

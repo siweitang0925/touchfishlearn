@@ -122,10 +122,20 @@ learnEnglish/
 ├── build_mac_windows.ps1    # Windows PowerShell编译脚本
 ├── Dockerfile               # Docker配置文件
 ├── .github/workflows/build.yml # GitHub Actions工作流
+├── tests/                    # 测试套件目录
+│   ├── README.md            # 测试说明文档
+│   ├── run_tests.py         # 测试套件入口
+│   ├── 功能测试/            # 核心功能测试
+│   ├── GitHub Actions测试/  # CI/CD相关测试
+│   ├── 演示脚本/            # 功能演示脚本
+│   ├── 兼容性测试/          # 跨平台兼容性测试
+│   └── 构建测试/            # 构建相关测试
+├── description/              # 项目文档目录
+│   ├── README.md            # 文档说明
+│   ├── 功能开发文档/        # 开发过程总结
+│   ├── 功能说明文档/        # 功能使用说明
+│   └── 构建部署文档/        # 构建部署指南
 ├── test_mac_compatibility.py   # Mac兼容性测试
-├── README_Mac.md            # Mac版本说明
-├── 虚拟机编译指南.md         # Windows编译Mac版本指南
-└── Mac版本说明.md           # Mac版本完整说明
 ```
 
 ## 使用说明
@@ -151,7 +161,22 @@ pip install -r requirements.txt
 
 ### 运行测试
 ```bash
-python test_app.py
+# 运行所有测试
+python tests/run_tests.py all
+
+# 运行特定类别测试
+python tests/run_tests.py category 功能测试
+python tests/run_tests.py category GitHub Actions测试
+python tests/run_tests.py category 演示脚本
+
+# 运行单个测试
+python tests/run_tests.py test_app.py
+
+# 交互模式
+python tests/run_tests.py
+
+# 查看所有测试
+python tests/run_tests.py list
 ```
 
 ### 代码规范
