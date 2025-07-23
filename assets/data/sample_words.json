@@ -1,0 +1,72 @@
+[
+  {
+    "word": "apple",
+    "meaning": "苹果",
+    "example": "I eat an apple every day for breakfast.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null
+  },
+  {
+    "word": "book",
+    "meaning": "书",
+    "example": "I love reading books in my free time.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null
+  },
+  {
+    "word": "computer",
+    "meaning": "电脑",
+    "example": "I work on my computer for eight hours a day.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null
+  },
+  {
+    "word": "dog",
+    "meaning": "狗",
+    "example": "The dog is my best friend and companion.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null
+  },
+  {
+    "word": "elephant",
+    "meaning": "大象",
+    "example": "Elephants are very large and intelligent animals.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null
+  },
+  {
+    "word": "flower",
+    "meaning": "花",
+    "example": "The flowers in the garden are beautiful.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null
+  },
+  {
+    "word": "garden",
+    "meaning": "花园",
+    "example": "I spend time in my garden every weekend.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null
+  },
+  {
+    "word": "house",
+    "meaning": "房子",
+    "example": "We live in a beautiful house near the park.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null
+  },
+  {
+    "word": "internet",
+    "meaning": "互联网",
+    "example": "The internet has changed the way we communicate.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null
+  },
+  {
+    "word": "journey",
+    "meaning": "旅程",
+    "example": "Life is a journey, not a destination.",
+    "created_time": "2024-01-01T00:00:00",
+    "last_review": null
+  }
+] 

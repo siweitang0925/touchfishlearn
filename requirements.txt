@@ -1,0 +1,31 @@
+# GUI框架 (选择其中一个)
+# tkinter 是Python内置的，无需安装
+# PyQt5==5.15.9  # 如果需要更现代的界面
+
+# 打包工具
+pyinstaller==6.3.0
+
+# 数据处理
+pandas==2.1.4
+numpy==1.24.3
+
+# 音频处理
+pygame==2.5.2
+
+# 网络请求 (用于获取在线资源)
+requests==2.31.0
+
+# 数据序列化
+json5==0.9.14
+
+# 开发工具
+pytest==7.4.3
+black==23.11.0
+flake8==6.1.0
+
+# 系统托盘支持
+pystray==0.19.4
+Pillow==10.0.1
+
+# 可选：更美观的GUI
+# customtkinter==5.2.0  # 现代化的tkinter主题 
