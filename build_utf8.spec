@@ -45,7 +45,7 @@ exe = EXE(
     a.zipfiles,
     a.datas,
     [],
-    name='英语学习助手',
+    name='English-Learning-Assistant',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,

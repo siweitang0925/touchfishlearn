@@ -70,7 +70,7 @@ jobs:
         if (Test-Path "build_utf8.spec") {
           python -m PyInstaller build_utf8.spec
         } else {
-          python -m PyInstaller --onefile --windowed --name "英语学习助手" --hidden-import=tkinter --hidden-import=tkinter.ttk main.py
+          python -m PyInstaller --onefile --windowed --name "English-Learning-Assistant" --hidden-import=tkinter --hidden-import=tkinter.ttk main.py
         }
     
     - name: Build executable (macOS)
@@ -95,7 +95,7 @@ jobs:
           python -m PyInstaller build_mac.spec
         else
           echo "spec files not found, using default spec..."
-          python -m PyInstaller --onefile --windowed --name "英语学习助手" --hidden-import=tkinter --hidden-import=tkinter.ttk main.py
+          python -m PyInstaller --onefile --windowed --name "English-Learning-Assistant" --hidden-import=tkinter --hidden-import=tkinter.ttk main.py
         fi
     
     - name: Build executable (Linux)
@@ -117,7 +117,7 @@ jobs:
         if [ -f "build_utf8.spec" ]; then
           python -m PyInstaller build_utf8.spec
         else
-          python -m PyInstaller --onefile --name "英语学习助手" --hidden-import=tkinter --hidden-import=tkinter.ttk main.py
+          python -m PyInstaller --onefile --name "English-Learning-Assistant" --hidden-import=tkinter --hidden-import=tkinter.ttk main.py
         fi
     
     - name: List build artifacts (Windows)
@@ -151,7 +151,7 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: 英语学习助手-${{ runner.os }}
+        name: English-Learning-Assistant-${{ runner.os }}
         path: dist/
         retention-days: 30
         if-no-files-found: error 
