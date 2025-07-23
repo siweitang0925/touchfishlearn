@@ -85,10 +85,12 @@ build_mac_docker.bat
 powershell -ExecutionPolicy Bypass -File build_mac_windows.ps1
 ```
 
-**方案2: 使用GitHub Actions**
+**方案2: 使用GitHub Actions（推荐）**
 - 将代码推送到GitHub仓库
-- 自动触发多平台编译
-- 下载编译好的Mac版本
+- 自动触发多平台编译（Windows、macOS、Linux）
+- 在Actions页面下载编译好的可执行文件
+- 支持自动缓存和错误处理
+- 如果遇到构建问题，请查看[故障排除指南](GitHub Actions故障排除.md)
 
 **方案3: 使用虚拟机**
 - 在Windows上安装macOS虚拟机
