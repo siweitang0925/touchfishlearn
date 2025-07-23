@@ -13,6 +13,24 @@ Error: This request has been automatically failed because it uses a deprecated v
 - 将 `actions/upload-artifact@v3` 升级到 `actions/upload-artifact@v4`
 - 已在 `.github/workflows/build.yml` 中修复
 
+### 2. Windows PowerShell 语法错误
+
+**错误信息**:
+```
+ParserError: Missing '(' after 'if' in if statement.
+Error: Process completed with exit code 1.
+```
+
+**原因**:
+- Windows环境使用PowerShell，而配置中使用了bash语法
+- `if [ "$RUNNER_OS" = "Windows" ]` 是bash语法，在PowerShell中无效
+
+**解决方案**:
+- 为不同平台使用正确的shell语法
+- Windows: 使用PowerShell语法 (`if: runner.os == 'Windows'`)
+- macOS/Linux: 使用bash语法 (`if: runner.os == 'macOS'`)
+- 明确指定shell类型: `shell: powershell` 或 `shell: bash`
+
 ### 2. PyInstaller 构建失败
 
 **可能原因**:

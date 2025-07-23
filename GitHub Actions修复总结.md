@@ -2,9 +2,17 @@
 
 ## 🐛 问题描述
 
+### 问题1: Actions版本弃用
 GitHub Actions 执行时出现错误：
 ```
 Error: This request has been automatically failed because it uses a deprecated version of `actions/upload-artifact: v3`.
+```
+
+### 问题2: Windows PowerShell语法错误
+Windows版本编译时出现错误：
+```
+ParserError: Missing '(' after 'if' in if statement.
+Error: Process completed with exit code 1.
 ```
 
 ## 🔧 修复内容
@@ -23,7 +31,37 @@ Error: This request has been automatically failed because it uses a deprecated v
   uses: actions/upload-artifact@v4
 ```
 
-### 2. 优化构建配置
+### 2. 修复跨平台Shell兼容性
+
+**问题**: Windows环境使用PowerShell，但配置中使用了bash语法
+
+**修复方案**: 为不同平台使用正确的shell语法
+
+**Windows (PowerShell)**:
+```yaml
+- name: Build executable (Windows)
+  if: runner.os == 'Windows'
+  shell: powershell
+  run: |
+    Write-Host "Building on Windows..."
+    Write-Host "Current directory: $(Get-Location)"
+    Get-ChildItem
+    python -m PyInstaller --onefile --windowed --name "英语学习助手" main.py
+```
+
+**macOS/Linux (bash)**:
+```yaml
+- name: Build executable (macOS)
+  if: runner.os == 'macOS'
+  shell: bash
+  run: |
+    echo "Building on macOS..."
+    echo "Current directory: $(pwd)"
+    ls -la
+    python -m PyInstaller build_mac.spec
+```
+
+### 3. 优化构建配置
 
 添加了以下改进：
 
@@ -72,7 +110,7 @@ Error: This request has been automatically failed because it uses a deprecated v
     fi
 ```
 
-### 3. 改进上传配置
+### 4. 改进上传配置
 
 ```yaml
 - name: Upload artifacts
