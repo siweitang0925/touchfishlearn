@@ -10,6 +10,15 @@ import os
 import subprocess
 import json
 
+# 设置控制台编码为UTF-8
+if sys.platform.startswith('win'):
+    try:
+        import codecs
+        sys.stdout = codecs.getwriter('utf-8')(sys.stdout.detach())
+        sys.stderr = codecs.getwriter('utf-8')(sys.stderr.detach())
+    except:
+        pass
+
 def test_imports():
     """测试所有必需的模块导入"""
     print("🔍 测试模块导入...")

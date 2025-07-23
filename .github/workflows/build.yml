@@ -67,11 +67,11 @@ jobs:
         $env:PYTHONUTF8 = "1"
         
         Write-Host "Building Windows executable..."
-        if [ -f "build_utf8.spec" ]; then
+        if (Test-Path "build_utf8.spec") {
           python -m PyInstaller build_utf8.spec
-        else
+        } else {
           python -m PyInstaller --onefile --windowed --name "英语学习助手" --hidden-import=tkinter --hidden-import=tkinter.ttk main.py
-        fi
+        }
     
     - name: Build executable (macOS)
       if: runner.os == 'macOS'
